@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185deg, 75%, 39%);
+  font-family: "Kumbh Sans", sans-serif;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.image-top {
+  position: absolute;
+  top: -68%;
+  left: -18%;
+}
+.image-top img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-bottom {
+  position: absolute;
+  bottom: -86%;
+  right: -13%;
+}
+.image-bottom img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  background-image: url("images/bg-pattern-card.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  position: relative;
+  border: none;
+  background-color: hsl(0deg, 0%, 100%);
+  width: 24%;
+  margin: 10em auto;
+  z-index: 1;
+  border-radius: 1em;
+  height: 54vh;
+}
+.container .card-image {
+  margin: 0 auto;
+  width: 97px;
+}
+.container .card-image img {
+  border-radius: 4em;
+  width: 100%;
+  margin-top: 6.4em;
+  outline: 0.3em solid white;
+}
+
+.name {
+  text-align: center;
+  margin-top: 1.3em;
+}
+.name h2 {
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: hsla(228deg, 41%, 12%, 0.863);
+  margin-top: 1em;
+}
+.name h3 {
+  font-size: 1em;
+  opacity: 0.5;
+  margin-top: 0.7em;
+}
+.name strong {
+  margin-left: 0.4em;
+  opacity: 0.5;
+  font-weight: 100;
+}
+
+.line {
+  background-color: hsl(0deg, 0%, 92%);
+  position: absolute;
+  top: 75%;
+  left: 0%;
+  width: 100%;
+  height: 0.5%;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  margin-top: 3.8em;
+  margin-right: 1em;
+}
+.flex-container h1 {
+  font-size: 1.3em;
+  color: hsla(228deg, 41%, 12%, 0.863);
+}
+.flex-container h4 {
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+  margin-top: 0.5em;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    max-width: 480px;
+    height: 100%;
+  }
+
+  .image-top {
+    display: none;
+  }
+
+  .image-bottom {
+    display: none;
+  }
+
+  .container {
+    width: 80%;
+    margin: 10em auto;
+    z-index: 1;
+    border-radius: 1em;
+    height: 60vh;
+  }
+  .container .card-image img {
+    width: 100%;
+    margin-top: 7em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    width: 80%;
+    margin: 10em auto;
+    z-index: 1;
+    border-radius: 1em;
+    height: 55vh;
+  }
+  .container .card-image img {
+    width: 90%;
+    margin-top: 5.1em;
+    margin-left: 0.5em;
+  }
+
+  .name {
+    margin-top: 1.9em;
+  }
+}
